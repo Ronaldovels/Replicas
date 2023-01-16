@@ -1,0 +1,247 @@
+@charset "UTF-8";
+
+/* Typcical Device Breakpoints
+---------------------------
+Pequenas telas: até 600px
+Celular: 600px até 768px
+Tablet: 768px até 992
+Desktop: 992px até 1200px
+Grandes telas: Acima de 1200px
+*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 3000px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+    body {
+        width: 97vw;
+        overflow-x: hidden;
+    }
+
+    #container {
+        width: 100vw;
+        height: 54px;
+        
+    }
+    
+    #ad {
+        width: 100vw;
+        height: 525px;
+        background-color: lightblue;
+        background-image: url(../media/background7-9.png);
+        background-size: cover;
+    }
+    
+    img#microsoft-logo {
+        width: 115px;
+        height: 23px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -1627%);
+       
+    }
+
+    #all-page {
+        display: none;
+    }
+    
+    img.icon {
+        width: 16px;
+        height: 18px;
+    }
+    
+    img.icon-cart {
+        width: 20px;
+        height: 20px;
+    }
+    
+    img.icon-newacc {
+        width: 30px;
+        height: 30px;
+    }
+    
+    table#nav-bar-table { 
+        margin-left: 90px;
+    }
+    
+    td {
+        font-weight: 400;
+        font-size: 13px;
+        padding: 0px 10px;
+    }
+    
+    #stretched {
+        width: 1000px;
+    }
+    
+    .nav-bar-link {
+        text-decoration: none;
+        color: gray;
+        
+    }
+    
+    
+    #text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-100%, 120%);
+        width: 425px;
+        height: 162px;
+        
+    }
+    
+    h1 {
+        font-size: 24px;
+        font-weight: 600;
+        margin: 20px 0px;
+    }
+    
+    p {
+        font-size: 16px;
+        margin-bottom: 33px;
+    }
+    
+    button {
+        border: none;
+        font-size: 16px;
+    }
+    
+    #btn1 {
+        background-color: #0067B8;
+        color: white;
+        width: 124px;
+        height: 39px;
+        font-weight: 600;
+        margin-right: 20px;
+    }
+    
+    #btn2 {
+        background-color: transparent;
+        color: #0067B8;
+        font-weight: 600;
+        width: 158px;
+        height: 20px;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    
+}
+
+@media screen and (min-width: 1200px) {
+    
+
+#container {
+    width: 100vw;
+    height: 54px;
+    
+}
+
+#all-page2 {
+    display: none;
+}
+
+#ad {
+    width: 100vw;
+    height: 593px;
+    background-color: lightblue;
+    background-image: url(../media/background.jpeg);
+    background-size: cover;
+}
+
+img {
+    width: 108px;
+    height: 23px;
+    margin-top: 10px;
+   
+}
+
+img.icon {
+    width: 16px;
+    height: 18px;
+}
+
+img.icon-cart {
+    width: 20px;
+    height: 20px;
+}
+
+img.icon-newacc {
+    width: 30px;
+    height: 30px;
+}
+
+table#nav-bar-table { 
+    margin-left: 90px;
+}
+
+td {
+    font-weight: 400;
+    font-size: 13px;
+    padding: 0px 10px;
+}
+
+#stretched {
+    width: 1000px;
+}
+
+.nav-bar-link {
+    text-decoration: none;
+    color: gray;
+    
+}
+
+
+#text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-148%, -63%);
+    width: 375px;
+    height: 162px;
+    
+}
+
+h1 {
+    font-size: 35px;
+    font-weight: 600;
+    margin: 20px 0px;
+}
+
+p {
+    font-size: 16px;
+    margin: 20px 0px;
+}
+
+button {
+    border: none;
+    font-size: 16px;
+}
+
+#btn1 {
+    background-color: #0067B8;
+    color: white;
+    width: 124px;
+    height: 39px;
+    font-weight: 600;
+    margin-right: 20px;
+}
+
+#btn2 {
+    background-color: transparent;
+    color: rgba(0, 0, 0, 0.658);
+    font-weight: 600;
+    width: 158px;
+    height: 20px;
+}
+}
