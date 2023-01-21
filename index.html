@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #image-container {
+  position: relative;
+  overflow: hidden;
+}
+
+#image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: left 0.5s;
+}
+    </style>
+</head>
+<body>
+    <div id="image-container">
+        <img id="image" src="Microsoft/media/background.jpeg" alt="image">
+      </div>
+      
+      <button id="change-image-button">Change Image</button>
+      <script>
+       
+       const imageContainer = document.getElementById("image-container");
+const image = document.getElementById("image");
+const changeImageButton = document.getElementById("change-image-button");
+
+let currentImageIndex = 0;
+const images = ["Microsoft/media/background.jpeg", "Microsoft/media/background7-9.png"];
+
+changeImageButton.addEventListener("click", function() {
+  // slide out the current image
+  image.style.left = "-100%";
+  setTimeout(function() {
+    // update the source of the image
+    currentImageIndex = (currentImageIndex + 1) % images.length;
+    image.src = images[currentImageIndex];
+    image.style.left = "0";
+  }, 500);
+});
+      </script>
+</body>
+</html>
